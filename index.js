@@ -18,14 +18,14 @@ function addNewElementAsLi() {
   return employeeList.insertAdjacentHTML('beforeend', `<li>${employeeName}</li>`)
 }
 
-// function addNewLiOnClick() {
-//   let input = document.querySelector('input[type="submit"]')
-//
-//   input.addEventListener('click', function(e) {
-//     addNewElementAsLi()
-//     document.querySelector('input').value = ""
-//   })
-// }
+function addNewLiOnClick() {
+  let input = document.querySelector('input[type="submit"]')
+
+  input.addEventListener('click', function(e) {
+    addNewElementAsLi()
+    document.querySelector('input[name="name"]').value = ""
+  })
+}
 
 // function clearEmployeeListOnLinkClick() {
 //   let link = document.querySelector('a')
