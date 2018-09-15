@@ -11,12 +11,12 @@ function retrieveEmployeeInformation() {
   return input.value
 }
 
-// function addNewElementAsLi() {
-//   let employeeName = retrieveEmployeeInformation()
-//   let employeeList = document.querySelector('.employee-list')
-//
-//   return employeeList.insertAdjacentHTML('beforeend', `<li>${employeeName}</li>`)
-// }
+function addNewElementAsLi() {
+  let employeeName = retrieveEmployeeInformation()
+  let employeeList = document.querySelector('.employee-list')
+
+  return employeeList.insertAdjacentHTML('beforeend', `<li>${employeeName}</li>`)
+}
 
 // function addNewLiOnClick() {
 //   let input = document.querySelector('input[type="submit"]')
